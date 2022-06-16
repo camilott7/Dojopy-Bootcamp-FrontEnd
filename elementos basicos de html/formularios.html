@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTMl5</title>
+</head>
+
+<body>
+    <h1> Formularios en HTML5</h1>
+
+    <form method="POST" action="https://enf714xhrn6eu.x.pipedream.net">
+        <fieldset>
+            <legend>Datos del cliente</legend>
+            <label for="firstName">Nombre: </label>
+            <input type="text" name="firstname"  id="firstName" placeholder="Ingresa tu nombre" /> <br>
+            <hr>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="lastname" id="apellido" placeholder="Ingresa tu Apellido" /> <br>
+            <hr>
+            <label for="contraseña">Contraseña: </label>
+            <input type="password" name="contraseña" id="contraseña" placeholder="Ingresa tu Contraseña"
+                required="true" /><br>
+            <hr>
+            <label for="E-Mail">E-Mail: </label>
+            <input type="email" name="email" id="E-mail" placeholder="Ingresa Correo Electronico" /><br>
+            <hr>
+            <label for="edad">Edad: </label>
+        </fieldset>
+        <fieldset>
+            <legend>Datos Secundarios</legend>
+            <input type="number" name="age" id="edad" placeholder="Ingresa tu Edad" /><br>
+            <hr>
+            <label for="color">Color: </label>
+            <input type="color" name="color" id="color" placeholder="Selecciona tu color favorito"><br>
+            <hr>
+
+            <label for="genero">Selecciona tu Genero favorito:</label><br>
+            <label for="accion">Accion:</label>
+            <input type="radio" name="genero" value="Accion" id="accion">
+            <label for="drama">Drama:</label>
+            <input type="radio" name="genero" value="Drama" id="drama">
+            <label for="terror">Terror:</label>
+            <input type="radio" name="genero" value="Terror" id="terror"><br>
+            <hr>
+
+            <label for="color_options">Selecciona tus colores favoritos></label>
+            <input type="checkbox" id="color_options" value="rojo" id="rojo" />
+            <label for="rojo">Rojo</label>
+
+            <input type="checkbox" id="color_options" value="azul" id="azul" />
+            <label for="rojo">Azul</label>
+
+            <input type="checkbox" id="color_options" value="verde" id="verde" />
+            <label for="rojo">Verde</label><br>
+            <hr>
+            <br>
+            <label for="tech">Selecciona tu lenguaje favaorito </label>
+            <select name="lenguajes_favoritos" id="tech">
+                <option value="HTML5">HTML5</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JavaScript</option>
+            </select> <br><hr>
+
+            <textarea name="mensaje" id="mensaje" cols="60" rows="5">Envianos tus comentarios</textarea><br>
+            <hr>
+        </fieldset>
+        <fieldset>
+            <legend>Fecha</legend>
+            <label for="fecha">Selecciona una fecha:</label>
+            <input type="date" name="fecha" id="fecha" /><br>
+            <hr>
+
+            <label for="limpiar">Limpiar todos los campos</label>
+            <input type="reset" id="limpiar" />
+            <br>
+            <hr>
+            <label for="profile">Sube tu imagen de perfil</label>
+            <input type="file" id="profile" name="profile" />
+            <br>
+            <hr>
+
+            <input type="range" name="rango_salario" id="rango_salario" min="1" max="10" /> <br>
+            <hr>
+
+            <input type="url" name="fanpage" />
+        </fieldset>
+
+        <input type="submit" />
+    </form>
+    <a href="/HTML/elementos basicos de html/index.html">
+        <button>Inicio</button>
+    </a>
+</body>
+
+</html>
